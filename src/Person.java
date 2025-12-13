@@ -8,6 +8,6 @@ abstract class Person {
     }
 
     public void introduce() {
-        System.out.println(name + " " + age + " yo");
+        System.out.println(this.name + " " + this.age + " yo");
     }
 }
