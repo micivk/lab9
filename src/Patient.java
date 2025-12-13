@@ -8,7 +8,7 @@ public class Patient extends Person implements Treatable{
     }
 
     public void receiveTreatment(){
-        System.out.println("Treatment...");
+        System.out.println("Patient " + name + " is being treated for: " + condition);
     }
 
 }

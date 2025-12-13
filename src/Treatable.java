@@ -1,3 +1,3 @@
 public interface Treatable {
-    public void receiveTreatment();
+    void receiveTreatment();
 }
