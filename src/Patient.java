@@ -1,14 +1,18 @@
 public class Patient extends Person implements Treatable{
 
-    String condition;
+    private String condition;
 
     public Patient(String name, int age, String condition) {
         super(name, age);
         this.condition = condition;
     }
 
+    public String getCondition() {
+        return condition;
+    }
+
     public void receiveTreatment(){
-        System.out.println("Patient " + this.name + " is being treated for: " + this.condition);
+        System.out.println("Patient " + getName() + " is being treated for: " + getCondition());
     }
 
 }

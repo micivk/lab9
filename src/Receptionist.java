@@ -7,6 +7,6 @@ public class Receptionist extends Staff{
         System.out.println("Registering new patients and scheduling appointments.");
     }
     public void registerPatient(Patient patient) {
-        System.out.println("Receptionist " + this.name + " registers patient: " + patient.name);
+        System.out.println("Receptionist " + getName() + " registers patient: " + patient.getName());
     }
 }

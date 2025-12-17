@@ -11,6 +11,6 @@ public class Doctor extends Staff {
     }
 
     public void prescribeMedicine(String medicine){
-        System.out.println(this.name+ " prescribes: " + medicine);
+        System.out.println(this.getName()+ " prescribes: " + medicine);
     }
 }

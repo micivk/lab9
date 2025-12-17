@@ -11,8 +11,8 @@ public class Nurse extends Staff {
 
 
     public void checkVitals(Patient patient){
-        System.out.println("Nurse " + this.name + " is checking vitals of patient: " + patient.name);
-        System.out.println("Patient condition: " + patient.condition);
+        System.out.println("Nurse " + getName() + " is checking vitals of patient: " + patient.getName());
+        System.out.println("Patient condition: " + patient.getCondition());
     }
 
 
