@@ -4,6 +4,13 @@ public class Prescription {
     private Doctor doctor;
     private Patient patient;
 
+    public List<Treatment> getTreatments() {
+        return treatments;
+    }
+    public Doctor getDoctor() {
+        return doctor;
+    }
+
     public Prescription(Doctor doctor, Patient patient) {
         this.doctor = doctor;
         this.patient = patient;

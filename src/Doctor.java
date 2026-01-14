@@ -46,5 +46,16 @@ public class Doctor extends Staff {
         patient.addPrescription(p);
         System.out.println(getName() + " issued a prescription for " + patient.getName());
     }
+
+    public void printSchedule() {
+        System.out.println("Schedule for Dr. " + getName() + ":");
+        appointments.sort(Comparator.comparing(Appointment::getDateTime));
+        for (Appointment app : appointments) {
+            System.out.println(" - " + app.getDateTime() + " with " + app.getPatient().getName());
+        }
+    }
+
+
+
     }
 

@@ -6,7 +6,12 @@ public class Patient extends Person implements Treatable{
     private List<Prescription> prescriptions;
     private List<Appointment> appointments;
 
-
+    public List<Prescription> getPrescriptions() {
+        return prescriptions;
+    }
+    public List<Appointment> getAppointments() {
+        return appointments;
+    }
 
 
     public Patient(String name, int age, String condition) {
@@ -30,8 +35,14 @@ public class Patient extends Person implements Treatable{
 
     public void showHistory() {
         System.out.println("History for " + getName() + ":");
-        System.out.println("Appointments: " + appointments.size());
-        System.out.println("Prescriptions: " + prescriptions.size());
+        System.out.println("Appointments:");
+        for (Appointment a : appointments) {
+            System.out.println(" - " + a.toString());
+        }
+        System.out.println("Prescriptions:");
+        for (Prescription p : prescriptions) {
+            p.printPrescription();
+        }
     }
 
     public void receiveTreatment(){
